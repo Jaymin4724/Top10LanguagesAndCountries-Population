@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300&family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  background-color: whitesmoke;
+  gap: 10px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px 10px 10px;
+  background: linear-gradient(#93b1a6, rgba(229, 210, 131, 0.8));
+  border-bottom: 3px rgba(229, 210, 131, 1) solid;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0px 0px 0px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.btn {
+  background-color: #213555;
+  color: rgba(229, 210, 131, 1);
+  padding: 8px 20px;
+  border: none;
+}
+.main {
+  background: linear-gradient(rgba(229, 210, 131, 0.8), #93b1a6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0px 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between; /* Add this line to distribute space evenly */
+  flex-wrap: nowrap;
+  width: 90%;
+  padding: 0;
+  margin: 0;
+}
+
+.title-container,
+.bar-container,
+.count-container {
+  flex: 1; /* Distribute the available space evenly among containers */
+  text-align: center;
+}
+
+.bar {
+  background-color: #213555; /* Set the background color of the bar */
+  transition: width 0.5s; /* Add a transition for smoother width changes */
+}
